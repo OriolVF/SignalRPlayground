@@ -1,0 +1,60 @@
+﻿@page
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+
+<body>
+    <div class="container">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-2">User</div>
+            <div class="col-4"><input type="text" id="userInput" /></div>
+        </div>
+        <div class="row">
+            <div class="col-2">Message</div>
+            <div class="col-4"><input type="text" id="messageInput" /></div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-6">
+                <input type="button" id="sendButton" value="Send Message" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+    <style>
+        #shape {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            cursor: move;
+            left: 0;
+            top: 0;
+
+        }
+    </style>
+    <div id="shape"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+            integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+            crossorigin="anonymous"></script>
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+   <script src="~/js/shape.js"></script>
+</body>
