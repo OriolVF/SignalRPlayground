@@ -26,6 +26,7 @@ namespace SignalRSandbox
         {
             services.AddRazorPages();
             services.AddSignalR();
+            services.AddSingleton<Records>(new Records());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

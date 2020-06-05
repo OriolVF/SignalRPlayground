@@ -6,6 +6,7 @@ var connectionChat = new signalR.HubConnectionBuilder().withUrl("/chatHub").buil
 document.getElementById("sendButton").disabled = true;
 
 connectionChat.on("ReceiveMessage", function (user, message) {
+    console.log('message ', user, message);
     var msg = message.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var encodedMsg = user + " says " + msg;
     var li = document.createElement("li");
